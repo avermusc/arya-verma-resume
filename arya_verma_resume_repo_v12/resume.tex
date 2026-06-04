@@ -1,0 +1,177 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins tuned for a one-page resume.
+\addtolength{\oddsidemargin}{-0.58in}
+\addtolength{\evensidemargin}{-0.58in}
+\addtolength{\textwidth}{1.16in}
+\addtolength{\topmargin}{-0.76in}
+\addtolength{\textheight}{1.65in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6.5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6.5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2.5pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabularx}{0.97\textwidth}[t]{Xr}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.20in, itemsep=0pt, topsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5.5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Arya Verma} \\ \vspace{0pt}
+    \small Los Angeles, CA $|$
+    \href{mailto:aryaverm@usc.edu}{\underline{aryaverm@usc.edu}} $|$
+    \href{https://linkedin.com/in/aryavermausc}{\underline{linkedin.com/in/aryavermausc}}
+\end{center}\vspace{-13pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Expected May 2027}
+      {B.S. Applied \& Computational Mathematics}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Mathematics \& Data Coursework}: Probability Theory; Mathematical Statistics; Numerical Methods; Fundamental Concepts of Analysis; Data Science with Python; Theory of Numbers.}
+        \resumeItem{\textbf{Relevant Computer Science Coursework}: Data Structures and Object-Oriented Design; Discrete Methods in Computer Science; Analysis of Algorithms and Theory of Computing; Artificial Intelligence: Principles and Foundations.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Foothill College {\normalfont\small $|$ Honors Institute Scholar}}{2023 -- 2024}
+      {Computer Science, Mathematics, and Cognitive Science}{Los Altos Hills, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Linear Algebra; Differential Equations.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of California, Santa Cruz}{2022 -- 2023}
+      {Computer Science}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Programming Abstractions in Python; Computer Systems and Assembly Language.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full Stack Engineer {\normalfont\small $|$ Internship}}{May 2026 -- Present}
+      {Tumeryk}{Hybrid / Redwood Shores, CA}
+      \resumeItemListStart
+        \resumeItem{Engineering an automated Python regression suite for Tumeryk's Sensitive Data Detection (SDD) system, replacing ad hoc API checks with CSV-driven tests that validate entity type, detected text, offsets, confidence scores, HTTP response codes, and pass/fail status.}
+        \resumeItem{Expanded canonical in-context and out-of-context coverage for sensitive entities including credit cards, dates/times, and IBANs; structured outputs for daily regression runs to catch behavior changes before demos and deployments.}
+        \resumeItem{Validated Guard detection behavior through Swagger/FastAPI endpoints and SDK smoke tests while debugging authentication failures, tenant policy exports, environment variables, and local service connectivity across Guard, LLM Scanner, Trust Score, and Studio.}
+        \resumeItem{Parsed Sophos firewall AI-usage reports and log exports into structured validation artifacts, extracting appliance metadata, firmware versions, date windows, domains, hit counts, and byte volume to support repeatable enterprise security demos and reporting checks.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Engineer {\normalfont\small $|$ Internship}}{May 2025 -- Aug. 2025}
+      {Tumeryk}{Hybrid / Redwood Shores, CA}
+      \resumeItemListStart
+        \resumeItem{Designed API contracts, protocol flows, and technical design documents for a dynamic AI guardrail policy service that adapts to user behavior and potential attack patterns.}
+        \resumeItem{Investigated a critical RAG chatbot file-upload defect that blocked policy testing; documented root-cause findings and proposed DevOps-facing infrastructure fixes ahead of client deployment.}
+        \resumeItem{Automated system-prompt generation and refined Topic Guideline guardrail UX flows, reducing false bug reports and improving the configuration experience for nontechnical users.}
+        \resumeItem{Migrated product UI data visualizations from MUI X Charts to Recharts for improved maintainability and visual consistency; optimized staging procedures and reduced console error logs by approximately 80\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer {\normalfont\small $|$ Internship}}{Jun. 2023 -- Sep. 2023}
+      {Kube8r Inc.}{Hybrid / Dublin, CA}
+      \resumeItemListStart
+        \resumeItem{Built data-hosting workflows with AWS services and MongoDB integrations to support application migration to a multi-cloud network.}
+        \resumeItem{Streamlined Kubernetes deployment processes and documented deployment steps for engineering handoff.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer {\normalfont\small $|$ Internship}}{Jun. 2021 -- Sep. 2021}
+      {Calance LLC}{Remote / Anaheim, CA}
+      \resumeItemListStart
+        \resumeItem{Developed static web pages, researched UI/UX patterns for food delivery services, and prototyped AI voice-bot workflows with Amazon Lex and AWS Connect.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI Search \& Decision Systems} $|$ \emph{Python, algorithms, dynamic programming}}{2026}
+      \resumeItemListStart
+        \resumeItem{Implemented BFS/DP rescue-robot planning, alpha-beta minimax game search, and value iteration for GridMDPs with deterministic tie-breaking and testable policy outputs.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Portfolio Optimization with Augmented Lagrangian Method} $|$ \emph{Python, numerical methods}}{2025}
+      \resumeItemListStart
+        \resumeItem{Analyzed convergence behavior, computational cost, and perturbation sensitivity for constrained portfolio optimization experiments.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}: Python, C++, Java, MATLAB, LaTeX \\
+    \textbf{Tools \& Platforms}: Git, Docker, FastAPI, AWS, Kubernetes, MongoDB, Linux/Unix, Jupyter, NumPy, pandas, Matplotlib \\
+    \textbf{Technical Areas}: AI guardrails, sensitive data detection, regression testing, API testing, CSV/JSON parsing, log analysis, data cleaning, algorithms
+    }}
+\end{itemize}
+
+%-----------AFFILIATIONS & ADDITIONAL-----------
+\section{Affiliations \& Additional}
+\vspace{-1pt}
+\noindent\hspace*{0.15in}\begin{minipage}{0.94\textwidth}
+\small{
+\textbf{USC AI Trust Hub}: Student member, applied AI trust and evaluation.\\
+\textbf{Tutoring}: Math Tutor, Foothill Pass The Torch.\\
+\textbf{Languages}: Hindi (advanced), Spanish (intermediate).
+}
+\end{minipage}
+
+\end{document}
