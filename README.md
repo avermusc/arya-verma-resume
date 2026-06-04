@@ -1,18 +1,15 @@
 # Arya Verma Resume
 
-This repository contains a LaTeX resume source file and compiled PDF.
-
-## Build
-
-Compile locally with:
-
-```bash
-pdflatex resume.tex
-```
-
-The generated PDF will be `resume.pdf`.
+This repository contains the LaTeX source and compiled PDF for my resume.
 
 ## Files
 
-- `resume.tex` - LaTeX source
-- `resume.pdf` - compiled resume
+- `AryaVerma_MathSWE_Resume.pdf` — compiled resume
+- `AryaVerma_MathSWE_Resume.tex` — LaTeX source
+
+## Build
+
+To compile locally:
+
+```bash
+pdflatex AryaVerma_MathSWE_Resume.tex
